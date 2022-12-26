@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  JetDevsHomeWork
+
+  Created by Developer on 24/12/22.
+  
+*/
+
+// MARK: - Login Screen
+
+"login" = "Login";
+"email" = "Email";
+"password" = "Password";
+"invalid_email_format" = "Invalid email format";
+"password_minimum_length" = "Password should at least 8 characters long";
+"invalid_email" = "Invalid Email";
+"invalid_password" = "Invalid Password";
+"login_failed" = "Login Failed";
+"unable_to_login" = "Unable to login, please try again";
+"email_password_not_match" = "Your email and/or password do not match.";
+"try_again" = "Try Again";
+"please_wait" = "Please Wait";
+"something_went_wrong" = "Something went wrong!";
+
