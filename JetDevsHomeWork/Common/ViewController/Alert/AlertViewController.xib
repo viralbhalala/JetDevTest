@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MYRIADPRO-REGULAR.OTF">
+            <string>MyriadPro-Regular</string>
+        </array>
+        <array key="MYRIADPRO-SEMIBOLD.OTF">
+            <string>MyriadPro-Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertViewController" customModule="JetDevsHomeWork" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="eGW-3J-Fki" id="WGj-hZ-qRE"/>
+                <outlet property="buttonsStackView" destination="hjz-7h-e3z" id="5pF-zd-yAX"/>
+                <outlet property="contentView" destination="Pt2-Wx-v5j" id="XIz-Os-Ggu"/>
+                <outlet property="messageLabel" destination="cph-NQ-Vkj" id="i3O-51-JHz"/>
+                <outlet property="titleLabel" destination="Dt5-2i-Y1v" id="v7V-aQ-eWM"/>
+                <outlet property="view" destination="yrW-GH-WDg" id="7aN-pi-jM4"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="yrW-GH-WDg">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eGW-3J-Fki">
+                    <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pt2-Wx-v5j">
+                    <rect key="frame" x="38" y="309" width="314" height="239.33333333333337"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dt5-2i-Y1v">
+                            <rect key="frame" x="20" y="30" width="274" height="23.333333333333329"/>
+                            <fontDescription key="fontDescription" name="MyriadPro-Semibold" family="Myriad Pro" pointSize="20"/>
+                            <color key="textColor" name="text"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localiseKey" value="option_title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cph-NQ-Vkj">
+                            <rect key="frame" x="20" y="73.333333333333314" width="274" height="56"/>
+                            <string key="text">Untuk mengakses fitur ini, Anda harus 
+mengaktifkan dan memberikan 
+akses lokasi Anda</string>
+                            <fontDescription key="fontDescription" name="MyriadPro-Regular" family="Myriad Pro" pointSize="16"/>
+                            <color key="textColor" name="text"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="localiseKey" value="option_title"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="hjz-7h-e3z">
+                            <rect key="frame" x="20" y="169.33333333333331" width="274" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="4w9-OD-3ia"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Dt5-2i-Y1v" firstAttribute="top" secondItem="Pt2-Wx-v5j" secondAttribute="top" constant="30" id="4gR-Nn-tVH"/>
+                        <constraint firstAttribute="bottom" secondItem="hjz-7h-e3z" secondAttribute="bottom" constant="30" id="Hp4-9C-kyC"/>
+                        <constraint firstItem="hjz-7h-e3z" firstAttribute="top" secondItem="cph-NQ-Vkj" secondAttribute="bottom" constant="40" id="Wbb-A8-afX"/>
+                        <constraint firstItem="cph-NQ-Vkj" firstAttribute="top" secondItem="Dt5-2i-Y1v" secondAttribute="bottom" constant="20" id="bQe-Mh-HIf"/>
+                        <constraint firstItem="cph-NQ-Vkj" firstAttribute="leading" secondItem="Dt5-2i-Y1v" secondAttribute="leading" id="gW0-lO-WRy"/>
+                        <constraint firstAttribute="trailing" secondItem="Dt5-2i-Y1v" secondAttribute="trailing" constant="20" id="hWd-gn-oTC"/>
+                        <constraint firstItem="Dt5-2i-Y1v" firstAttribute="leading" secondItem="Pt2-Wx-v5j" secondAttribute="leading" constant="20" id="jdo-En-bfC"/>
+                        <constraint firstAttribute="trailing" secondItem="hjz-7h-e3z" secondAttribute="trailing" constant="20" id="p2m-gV-ygc"/>
+                        <constraint firstItem="cph-NQ-Vkj" firstAttribute="trailing" secondItem="Dt5-2i-Y1v" secondAttribute="trailing" id="qT7-3J-nLt"/>
+                        <constraint firstItem="hjz-7h-e3z" firstAttribute="leading" secondItem="Pt2-Wx-v5j" secondAttribute="leading" constant="20" id="uTx-Js-FUQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="dkr-z6-i6T"/>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.69756919370000003" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dkr-z6-i6T" firstAttribute="trailing" secondItem="eGW-3J-Fki" secondAttribute="trailing" id="FyA-yD-XA1"/>
+                <constraint firstAttribute="bottom" secondItem="eGW-3J-Fki" secondAttribute="bottom" id="KIz-HU-FVR"/>
+                <constraint firstItem="Pt2-Wx-v5j" firstAttribute="leading" secondItem="yrW-GH-WDg" secondAttribute="leading" constant="38" id="Xse-JK-jID"/>
+                <constraint firstItem="eGW-3J-Fki" firstAttribute="leading" secondItem="dkr-z6-i6T" secondAttribute="leading" id="d0p-F4-RLW"/>
+                <constraint firstItem="Pt2-Wx-v5j" firstAttribute="centerY" secondItem="dkr-z6-i6T" secondAttribute="centerY" id="jho-Rx-MRH"/>
+                <constraint firstItem="dkr-z6-i6T" firstAttribute="trailing" secondItem="Pt2-Wx-v5j" secondAttribute="trailing" constant="38" id="mQ0-le-pdG"/>
+                <constraint firstItem="eGW-3J-Fki" firstAttribute="top" secondItem="yrW-GH-WDg" secondAttribute="top" id="xMg-bo-sv7"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="115.84821428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="text">
+            <color red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
